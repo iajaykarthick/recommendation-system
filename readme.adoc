@@ -16,6 +16,10 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 == User to user Collaborative Filtering
 
+:stem:
+
+stem:[sqrt(N)]
+
 [stem]
 ++++
 S(i, j) = \bar{r}_{i} +
