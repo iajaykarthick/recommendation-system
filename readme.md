@@ -16,14 +16,7 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 User to User Collaborative Filtering is a kind of machine learning technique used to predict the items that a user  might like on the basis of ratings given to that item by the other users who have similar taste with that of the target user.
 
-In this project, the users with similar taste of the user $i$ is referred as neighbors of user $i$. Each neighbor of user $i$ is referred as user $i^{\prime}$. 
-
-$$
-S(i, j) = \bar{r}_{i} +
-          \frac{\sum\limits_{i^{\prime}=\Omega_j}
-          w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
-         {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
-$$
+In this project, the users with similar taste of the user $i$ is referred as neighbors of user $i$. Each neighbor of user $i$ is referred as user $i^{\prime}$. We find the similarity score or the weight of the similarity between user $i$ and neighbor user i^{\prime}$ is calculated as follows:
 
 $$
 w_{ii^{\prime}} =
@@ -37,6 +30,14 @@ w_{ii^{\prime}} =
             \sqrt{\sum\limits_{j\in\Psi_{ii^{\prime}}} (r_{i^{\prime}j} - \bar{r}_{i^{\prime}})^2}
         }
 $$
+
+$$
+S(i, j) = \bar{r}_{i} +
+          \frac{\sum\limits_{i^{\prime}=\Omega_j}
+          w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
+         {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
+$$
+
 
 * $\Psi_{i}$ set of movies that user stem:[i] has rated
 * $\Psi_{i^{\prime}}$: set of movies that user $i^{\prime}$ has rated
