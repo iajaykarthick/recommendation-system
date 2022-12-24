@@ -14,6 +14,10 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 ## User to user Collaborative Filtering
 
+User to User Collaborative Filtering is a kind of machine learning technique used to predict the items that a user  might like on the basis of ratings given to that item by the other users who have similar taste with that of the target user.
+
+In this project, the users with similar taste of the user $i$ is referred as neighbors of user $i$. Each neighbor of user $i$ is referred as user $i^{\prime}$. 
+
 $$
 S(i, j) = \bar{r}_{i} +
           \frac{\sum\limits_{i^{\prime}=\Omega_j}
