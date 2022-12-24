@@ -49,9 +49,7 @@ $$
 
 This score give an estimate of how much the user $i$ would have rated the movie $j$ based on the ratings of his/her weighted neighbors $i^{\prime} \in \Omega_{j}$ on movie $j$. 
 
-
-
-
+The weighted relationship across each user's based on their similarity is depicted in a graph as follows:
 
 ![user-user-relationship-img](images/users_relationship.png)
 
