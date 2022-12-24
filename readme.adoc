@@ -14,14 +14,17 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 == User to user Collaborative Filtering
 
-:stem: latexmath
 
-$$
+$$ S(i, j) = \bar{r}_{i} +\frac{\sum\limits_{i^{\prime}=\Omega_j}w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}{\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|} $$
+
+:stem: latexmath
+[stem]
+++++
 S(i, j) = \bar{r}_{i} +
           \frac{\sum\limits_{i^{\prime}=\Omega_j}
           w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
          {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
-$$
+++++
 
 [stem]
 ++++
