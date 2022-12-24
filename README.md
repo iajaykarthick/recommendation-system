@@ -10,4 +10,9 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 
 ### User to user Collaborative Filtering
+
+$$s(i, j) = \frac{1}{2}$$
+
 ![User to User relationship](./images/users_relationship.png)
+
+
