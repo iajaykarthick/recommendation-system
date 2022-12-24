@@ -12,4 +12,35 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 == User to user Collaborative Filtering
 
-image::images/users_relationship.png[]
+:stem: latexmath
+[stem]
+++++
+S(i, j) = \bar{r}_{i} +
+          \frac{\sum\limits_{i^{\prime}=\Omega_j}
+          w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
+         {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
+++++
+
+[stem]
+++++
+w_{ii^{\prime}} =
+    \frac{
+            \sum\limits_{j\in\Psi_{ii^{\prime}}}
+            (r_{ij} - \bar{r}_{i})
+            (r_{i^{\prime}j} - \bar{r}_{i^{\prime}})
+         }
+         {
+            \sqrt{\sum\limits_{j\in\Psi_{ii^{\prime}}} (r_{ij} - \bar{r}_{i})^2}
+            \sqrt{\sum\limits_{j\in\Psi_{ii^{\prime}}} (r_{i^{\prime}j} - \bar{r}_{i^{\prime}})^2}
+        }
+++++
+stem:[\Psi_{i}]:: set of movies that user stem:[i] has rated
+stem:[\Psi_{i^{\prime}}]:: set of movies that user stem:[i^{\prime}] has rated
+
+stem:[\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}]
+
+stem:[\Psi_{ii^{\prime}}]:: set of movies that both users stem:[i] and stem:[i^{\prime}] have rated
+
+
+image::images/users_relationship.png[user-user-relationship-img]
+
