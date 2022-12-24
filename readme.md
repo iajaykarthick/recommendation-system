@@ -16,7 +16,7 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 
 User to User Collaborative Filtering is a kind of machine learning technique used to predict the items that a user  might like on the basis of ratings given to that item by the other users who have similar taste with that of the target user.
 
-In this project, the users with similar taste of the user $i$ is referred as neighbors of user $i$. Each neighbor of user $i$ is referred as user $i^{\prime}$. We find the similarity score or the weight of the similarity between user $i$ and neighbor user i^{\prime}$ is calculated as follows:
+In this project, the users with similar taste of the user $i$ is referred as neighbors of user $i$. Each neighbor of user $i$ is referred as user $i^{\prime}$. We find the similarity score or the weight of the similarity between user $i$ and neighbor user $i^{\prime}$ is calculated as follows:
 
 $$
 w_{ii^{\prime}} =
@@ -31,11 +31,12 @@ w_{ii^{\prime}} =
         }
 $$
 
-
+where,
 * $\Psi_{i}$ set of movies that user $i$ has rated
 * $\Psi_{i^{\prime}}$: set of movies that user $i^{\prime}$ has rated
 * $\Psi_{ii^{\prime}}$ set of movies that both users $i$ and $i^{\prime}$ have rated
 $$\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}$$
+* $(r_{ij} - \bar{r}_{i})$ is the deviation score of the user's rating on the movie j from his/her average rating. This is because each user's interpretation of rating can be different. Hence, we focus on the deviation score for each movie rating to see how much it deviates from his average rating. 
 
 $$
 S(i, j) = \bar{r}_{i} +
