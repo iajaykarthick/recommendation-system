@@ -38,12 +38,16 @@ where,
 $$\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}$$
 * $(r_{ij} - \bar{r}_{i})$ is the deviation score of the user's rating on the movie j from his/her average rating. This is because each user's interpretation of rating can be different. Hence, we focus on the deviation score for each movie rating to see how much it deviates from his average rating. 
 
+The predicted rating score for a user $i$ on a movie $j$ is calculated as follows:
+
 $$
 S(i, j) = \bar{r}_{i} +
           \frac{\sum\limits_{i^{\prime}=\Omega_j}
           w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
          {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
 $$
+
+This score give an estimate of how much the user $i$ would have rated the movie $j$ based on the ratings of his/her weighted neighbors $i^{\prime} \in \Omega_{j}$ on movie $j$. 
 
 
 
