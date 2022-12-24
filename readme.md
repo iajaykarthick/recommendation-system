@@ -39,7 +39,7 @@ S(i, j) = \bar{r}_{i} +
 $$
 
 
-* $\Psi_{i}$ set of movies that user stem:[i] has rated
+* $\Psi_{i}$ set of movies that user $i$ has rated
 * $\Psi_{i^{\prime}}$: set of movies that user $i^{\prime}$ has rated
 * $\Psi_{ii^{\prime}}$ set of movies that both users $i$ and $i^{\prime}$ have rated
 $$\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}$$
