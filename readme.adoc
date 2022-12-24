@@ -1,3 +1,5 @@
+:imagesdir: images
+
 = Recommendation System
 
 == Objective
@@ -13,13 +15,13 @@ The datasets describe ratings and free-text tagging activities from MovieLens, a
 == User to user Collaborative Filtering
 
 :stem: latexmath
-[stem]
-++++
+
+$$
 S(i, j) = \bar{r}_{i} +
           \frac{\sum\limits_{i^{\prime}=\Omega_j}
           w_{ij} (r_{ij} - \bar{r}_{i^{\prime}})}
          {\sum\limits_{i^{\prime}=\Omega_j} |w_{ii^{\prime}}|}
-++++
+$$
 
 [stem]
 ++++
@@ -42,5 +44,5 @@ stem:[\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}]
 stem:[\Psi_{ii^{\prime}}]:: set of movies that both users stem:[i] and stem:[i^{\prime}] have rated
 
 
-image::images/users_relationship.png[user-user-relationship-img]
+image::users_relationship.png[user-user-relationship-img]
 
