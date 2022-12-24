@@ -34,12 +34,11 @@ w_{ii^{\prime}} =
         }
 $$
 
-$\Psi_{i}$ set of movies that user stem:[i] has rated
-$\Psi_{i^{\prime}}$: set of movies that user $i^{\prime}$ has rated
-
+* $\Psi_{i}$ set of movies that user stem:[i] has rated
+* $\Psi_{i^{\prime}}$: set of movies that user $i^{\prime}$ has rated
+* $\Psi_{ii^{\prime}}$ set of movies that both users $i$ and $i^{\prime}$ have rated
 $$\Psi_{ii^{\prime}} = \Psi_{i} \cap \Psi_{i^{\prime}}$$
 
-$\Psi_{ii^{\prime}}$ set of movies that both users $i$ and $i^{\prime}$ have rated
 
 
 ![user-user-relationship-img](images/users_relationship.png)
