@@ -92,7 +92,7 @@ where,
 
 This score give an estimate of how much the user $i$ would have rated the movie $j$ based on his/her ratings on movies $j^{\prime}$ which are similar to movie $j$. 
 
-The weighted relationship across each user's based on their similarity is depicted in a graph as follows:
+The weighted relationship across each movie based on their similarity is depicted in a graph as follows:
 
 ![item-item-relationship-img](images/movies_relationship.png)
 
