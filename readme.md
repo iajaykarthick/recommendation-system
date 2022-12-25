@@ -76,7 +76,7 @@ where,
 
 * $\Omega_{j}$ - users who rated movie $j$
 * $\Omega_{jj^{\prime}}$ - users who rated movie $j$ and movie $j^{\prime}$
-* $\bar{r}_{j}$ - average rating for movie j
+* $\bar{r}_{j}$ - average rating for movie $j$
 
 The predicted rating score for a user $i$ on a movie $j$ is calculated as follows:
 
@@ -89,6 +89,10 @@ $$
 
 where, 
 * $\Psi_i$ - movies that user i has rated
+
+This score give an estimate of how much the user $i$ would have rated the movie $j$ based on his/her ratings on movies $j^{\prime}$ which are similar to movie $j$. 
+
+The weighted relationship across each user's based on their similarity is depicted in a graph as follows:
 
 ![item-item-relationship-img](images/movies_relationship.png)
 
