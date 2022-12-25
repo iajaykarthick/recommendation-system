@@ -72,6 +72,11 @@ w_{jj^{\prime}} =
         }
 $$
 
+where,
+
+* $\Omega_{j}$ - users who rated movie $j$
+* $\Omega_{jj^{\prime}}$ - users who rated movie $j$ and movie $j^{\prime}$
+* $\bar{r}_{j}$ - average rating for movie j
 
 ![item-item-relationship-img](images/movies_relationship.png)
 
