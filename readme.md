@@ -87,5 +87,8 @@ S(i, j) = \bar{r}_{j} +
          {\sum\limits_{j^{\prime}=\Psi_i} |w_{jj^{\prime}}|}
 $$
 
+where, 
+* $\Psi_i$ - movies that user i has rated
+
 ![item-item-relationship-img](images/movies_relationship.png)
 
