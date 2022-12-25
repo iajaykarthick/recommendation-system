@@ -78,5 +78,14 @@ where,
 * $\Omega_{jj^{\prime}}$ - users who rated movie $j$ and movie $j^{\prime}$
 * $\bar{r}_{j}$ - average rating for movie j
 
+The predicted rating score for a user $i$ on a movie $j$ is calculated as follows:
+
+$$
+S(i, j) = \bar{r}_{j} +
+          \frac{\sum\limits_{j^{\prime}=\Psi_i}
+          w_{jj^{\prime}} (r_{ij^{\prime}} - \bar{r}_{j^{\prime}})}
+         {\sum\limits_{j^{\prime}=\Psi_i} |w_{jj^{\prime}}|}
+$$
+
 ![item-item-relationship-img](images/movies_relationship.png)
 
