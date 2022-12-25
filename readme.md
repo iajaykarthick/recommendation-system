@@ -55,5 +55,23 @@ The weighted relationship across each user's based on their similarity is depict
 
 ## Item-Based Collaborative Filtering
 
+Item-item collaborative filtering is one kind of recommendation method which is used to predict the items that a user  might like on the basis of ratings given to the similar items the target user. 
+
+In this project, the movies that are similar to the movie $j$ is referred as movie $j^{\prime}$. The similarity score between movies is calculated as follows:
+
+$$
+w_{jj^{\prime}} =
+    \frac{
+            \sum\limits_{i\in\Omega_{jj^{\prime}}}
+            (r_{ij} - \bar{r}_{j})
+            (r_{ij^{\prime}} - \bar{r}_{j^{\prime}})
+         }
+         {
+            \sqrt{\sum\limits_{j\in\Omega_{jj^{\prime}}} (r_{ij} - \bar{r}_{j})^2}
+            \sqrt{\sum\limits_{j\in\Omega_{jj^{\prime}}} (r_{ij^{\prime}} - \bar{r}_{j^{\prime}})^2}
+        }
+$$
+
+
 ![item-item-relationship-img](images/movies_relationship.png)
 
