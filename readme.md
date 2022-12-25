@@ -99,6 +99,6 @@ This score give an estimate of how much the user $i$ would have rated the movie 
 
 The weighted relationship across each movie based on their similarity is depicted in a graph as follows:
 
-![item-item-relationship-img](images/movies_relationship.png )
+![item-item-relationship-img](images/movies_relationship.png)
 
 
