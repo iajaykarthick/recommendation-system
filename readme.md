@@ -13,6 +13,9 @@ The dataset used in this project is fetched from [MovieLens 20M Dataset](https:/
 The datasets describe ratings and free-text tagging activities from MovieLens, a movie recommendation service. It contains 20000263 ratings and 465564 tag applications across 27278 movies. These data were created by 138493 users between January 09, 1995 and March 31, 2015. This dataset was generated on October 17, 2016.Users were selected at random for inclusion. All selected users had rated at least 20 movies.
 
 ## User Based Collaborative Filtering
+![Training RMSE](https://img.shields.io/badge/Training%20RMSE-0.52-227C70?style=flat-square)
+![Test RMSE](https://img.shields.io/badge/Test%20RMSE-0.60-227C70?style=flat-square)
+
 
 User to User Collaborative Filtering is a kind of machine learning technique used to predict the items that a user  might like on the basis of ratings given to that item by the other users who have similar taste with that of the target user.
 
@@ -54,6 +57,8 @@ The weighted relationship across each user's based on their similarity is depict
 ![user-user-relationship-img](images/users_relationship.png)
 
 ## Item-Based Collaborative Filtering
+![Training RMSE](https://img.shields.io/badge/Training%20RMSE-0.51-227C70?style=flat-square)
+![Test RMSE](https://img.shields.io/badge/Test%20RMSE-0.54-227C70?style=flat-square)
 
 Item-item collaborative filtering is one kind of recommendation method which is used to predict the items that a user  might like on the basis of ratings given to the similar items the target user. 
 
