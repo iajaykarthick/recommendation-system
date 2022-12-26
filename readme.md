@@ -101,4 +101,8 @@ The weighted relationship across each movie based on their similarity is depicte
 
 ![item-item-relationship-img](images/movies_relationship.png)
 
+## Matrix Factorization
+![Training MSE](https://img.shields.io/badge/Training%20MSE-0.58-227C70?style=flat-square)
+![Test MSE](https://img.shields.io/badge/Test%20MSE-0.60-227C70?style=flat-square)
+
 
