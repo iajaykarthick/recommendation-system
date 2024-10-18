@@ -1,0 +1,4 @@
+data_paths:
+  raw: "data/ml-32m"
+  processed: "data/processed"
+  external: "data/external"
